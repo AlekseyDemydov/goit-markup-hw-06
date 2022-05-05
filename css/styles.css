@@ -243,8 +243,9 @@ color: var(--background-color);
 
 }
 .backdrop{
-    
-    position: absolute;
+    margin: 0 auto;
+    z-index: 100;
+    position: fixed;
     top: 0;
     
     
@@ -386,8 +387,11 @@ textarea {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 28px;
+    margin-bottom: 10px;
     
+}
+.icon-position{
+    position: relative;
 }
 .form-field:nth-child(5){
     margin-bottom: 0;
@@ -407,8 +411,9 @@ textarea {
 }
 
 .form-field label {
-    position: absolute;
-    transform: translateY(-15px);
+    position: relative;
+    text-align: left;
+    margin-bottom: 4px;
 }
 .agree-section{
     display: flex;
@@ -429,6 +434,7 @@ textarea {
     color: #757575;
     justify-content: baseline;
     align-items: baseline;
+    
 
 }
 
@@ -440,11 +446,14 @@ textarea {
     height: 15px;
     border: 2px solid var(--text-color);
     border-radius: 4px;
+    margin-right: 8.38px;
+    
 }
 .checkbox{
     display: inline-block;
     appearance: none;
     position: absolute;
+    
 }
 .checkbox:checked + .icon-checkbox{
     background-color: var(--button-color);
@@ -453,6 +462,7 @@ textarea {
     border-color: var(--button-color);
     background-size: contain;
     background-repeat: no-repeat;
+    
 }
 
 /* main */
@@ -536,6 +546,7 @@ color: var(--second-text);
     
 }
 .work-section h2{
+    position: relative;
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -1054,7 +1065,7 @@ address li:last-child{
     margin-right: 12px;
 }
 .mail-input input{
-    
+    color: var(--background-color);
     padding-left: 16px;
     
 }
