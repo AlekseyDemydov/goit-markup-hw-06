@@ -810,9 +810,12 @@ padding: 6px 22px;
     list-style: none;
 }
 
+.product a{
+    display: block;
+}
 .product{
     
-    display: inline-block;
+    display: block;
     align-items: center;
     justify-content: center;
     margin-left: 30px;
@@ -861,18 +864,18 @@ opacity: 1;
 transform: translateY(0);
 } */
 
-.product:hover {
+.product a:hover {
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.product:focus {
+.product a:focus {
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .product-actions{
     position:absolute;
