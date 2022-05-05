@@ -316,6 +316,10 @@ textarea {
     box-sizing: border-box;
     border-radius: 4px;
     padding: 12px 16px;
+    transition: border-color 250ms linear;
+}
+textarea:hover{
+    border-color: var(--button-color);
 }
 .form {
     width: 448px;
@@ -367,6 +371,7 @@ textarea {
 .treaty{
     color: var(--button-color);
     text-decoration: underline;
+    margin-left: 2pt;
 }
 .bt-agree{
     width: 200px;
@@ -395,6 +400,7 @@ textarea {
     
 }
 .icon-position{
+    display: flex;
     position: relative;
 }
 .form-field:nth-child(5){
@@ -412,6 +418,7 @@ textarea {
     margin-top: 11px;
     margin-left: 12px;
     transition: fill 250ms linear;
+    
 }
 
 .form-field label {
@@ -423,21 +430,22 @@ textarea {
     display: flex;
     margin-top: 20px;
     margin-bottom: 30px;
+    
     justify-content: center;
 }
 .agree{
-    display: inline-flex;
+    display: flex;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
    
     
+    align-items: center;
     letter-spacing: 0.03em;
     
     color: #757575;
-    justify-content: baseline;
-    align-items: baseline;
+    
     
 
 }
